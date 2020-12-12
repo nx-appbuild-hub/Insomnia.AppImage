@@ -38,7 +38,7 @@ all: clean
 	chmod +x $(PWD)/build/Insomnia.AppImage
 	cd $(PWD)/build && $(PWD)/build/Insomnia.AppImage --appimage-extract
 
-	cp --force --recursive $(PWD)/build/squashfs-root/usr/lib/* $(PWD)/build/Boilerplate.AppDir/lib
+	cp --force --recursive $(PWD)/build/squashfs-root/usr/lib/* $(PWD)/build/Boilerplate.AppDir/lib64
 	cp --force --recursive $(PWD)/build/squashfs-root/usr/share/* $(PWD)/build/Boilerplate.AppDir/share
 	rm -rf $(PWD)/build/squashfs-root/AppRun
 	rm -rf $(PWD)/build/squashfs-root/usr	
